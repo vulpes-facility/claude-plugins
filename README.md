@@ -32,6 +32,18 @@ claude plugin install <plugin>@vulpes
 
 Run `claude plugin validate .` before a pull request.
 
+## Releasing vwiki
+
+vwiki's source is private, so each release puts its build here:
+
+1. In the source repository, from a green tree, run `node scripts/release.mjs <clone of this repository>`.
+   It replaces `plugins/vwiki` with the build and refreshes the `vwiki` entry, and leaves committing to you.
+2. Here, on a `feat/vwiki-<version>` branch, review the diff, run `claude plugin validate .`,
+   and commit it as `feat: vwiki <version> - <what changed>`.
+3. Open a pull request, merge it with a merge commit, and tag the merge commit `vwiki-v<version>`.
+
+Users receive a release when `version` in `plugins/vwiki/.claude-plugin/plugin.json` changes.
+
 ## License
 
 [MIT](LICENSE), except [`plugins/vwiki`](plugins/vwiki), which is Apache-2.0 and carries its own `LICENSE` and `NOTICE`.
