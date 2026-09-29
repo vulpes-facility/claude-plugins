@@ -1,6 +1,6 @@
 ---
 name: flush
-description: Close conversation seeding on an OKF wiki bundle - one pass over the whole `inbox/` queue: classify each item, land the kept originals in `raw/`, write the concepts that pin them, validate to an empty inbox. Use on "flush the inbox", "process the wiki queue", "write up what we decided", at session close, or on the `inbox` WARN from `vwiki validate`.
+description: 'Close conversation seeding on an OKF wiki bundle - one pass over the whole `inbox/` queue: classify each item, land the kept originals in `raw/`, write the concepts that pin them, validate to an empty inbox. Use on "flush the inbox", "process the wiki queue", "write up what we decided", at session close, or on the `inbox` WARN from `vwiki validate`.'
 ---
 
 # Flush the inbox
