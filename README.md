@@ -13,7 +13,6 @@ claude plugin install <plugin>@vulpes
 
 | Plugin | What it does | Source |
 | --- | --- | --- |
-| `gh-railyard` | Set up and change gh-railyard's Apps, agents and rails by asking Claude, instead of typing the CLI. | [`vulpes-facility/gh-railyard`](https://github.com/vulpes-facility/gh-railyard), `plugins/gh-railyard` |
 | `gh-shapeup` | Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits. | [`vulpes-facility/gh-shapeup`](https://github.com/vulpes-facility/gh-shapeup), `plugins/gh-shapeup` |
 | `vwiki` | Wiki mechanics for OKF knowledge bundles: the `vwiki` CLI, its ruleset, and five agent skills (init, seed, flush, validate, migrate). | The build of a private repository, in [`plugins/vwiki`](plugins/vwiki) |
 
