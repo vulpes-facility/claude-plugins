@@ -6,7 +6,7 @@ Claude Code plugins for the tools of vulpes-facility.
 
 ```
 claude plugin marketplace add vulpes-facility/claude-plugins
-claude plugin install <plugin>@vulpes-facility
+claude plugin install <plugin>@vulpes
 ```
 
 ## Plugins
@@ -26,7 +26,8 @@ claude plugin install <plugin>@vulpes-facility
   Only the build is published, never the source.
 - A build hides code only from a casual reader: skills, agents and commands are prompts Claude reads, so they ship as they are,
   and bundled or compiled code can still be read back. Logic that must stay private runs on a server, behind a remote MCP server.
-- The marketplace is named `vulpes-facility`, since names that look like Anthropic's own marketplaces, such as `claude-plugins-official`, are refused.
+- The marketplace is named `vulpes`, the name of the catalog it replaces, `vulpes33/claude-plugins`, so that install ids such as `vwiki@vulpes` keep working.
+  Names that look like Anthropic's own marketplaces, such as `claude-plugins-official`, are refused.
 
 Run `claude plugin validate .` before a pull request.
 
