@@ -1,6 +1,6 @@
 {
   "name": "vulpes-facility",
-  "description": "Claude Code plugins for the tools of vulpes-facility, such as gh-railyard.",
+  "description": "Claude Code plugins for the tools of vulpes-facility, such as gh-railyard and gh-shapeup.",
   "owner": { "name": "vulpes-facility", "url": "https://github.com/vulpes-facility" },
   "plugins": [
     {
@@ -8,6 +8,12 @@
       "source": { "source": "git-subdir", "url": "https://github.com/vulpes-facility/gh-railyard.git", "path": "plugins/gh-railyard" },
       "description": "Set up and change gh-railyard's Apps, agents and rails by asking Claude, instead of typing the CLI.",
       "homepage": "https://github.com/vulpes-facility/gh-railyard"
+    },
+    {
+      "name": "gh-shapeup",
+      "source": { "source": "git-subdir", "url": "https://github.com/vulpes-facility/gh-shapeup.git", "path": "plugins/gh-shapeup" },
+      "description": "Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits, through the gh shapeup CLI.",
+      "homepage": "https://github.com/vulpes-facility/gh-shapeup"
     }
   ]
 }
