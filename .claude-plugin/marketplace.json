@@ -1,0 +1,13 @@
+{
+  "name": "vulpes-facility",
+  "description": "Claude Code plugins for the tools of vulpes-facility, such as gh-railyard.",
+  "owner": { "name": "vulpes-facility", "url": "https://github.com/vulpes-facility" },
+  "plugins": [
+    {
+      "name": "gh-railyard",
+      "source": { "source": "git-subdir", "url": "https://github.com/vulpes-facility/gh-railyard.git", "path": "plugins/gh-railyard" },
+      "description": "Set up and change gh-railyard's Apps, agents and rails by asking Claude, instead of typing the CLI.",
+      "homepage": "https://github.com/vulpes-facility/gh-railyard"
+    }
+  ]
+}
