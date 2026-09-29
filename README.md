@@ -1,12 +1,12 @@
 # claude-plugins
 
-Claude Code plugins for the tools of vulpes-facility.
+Claude Code plugins of vulpes-facility.
 
 ## Install
 
 ```
 claude plugin marketplace add vulpes-facility/claude-plugins
-claude plugin install <plugin>@vulpes-facility
+claude plugin install <plugin>@vulpes
 ```
 
 ## Plugins
@@ -15,6 +15,7 @@ claude plugin install <plugin>@vulpes-facility
 | --- | --- | --- |
 | `gh-railyard` | Set up and change gh-railyard's Apps, agents and rails by asking Claude, instead of typing the CLI. | [`vulpes-facility/gh-railyard`](https://github.com/vulpes-facility/gh-railyard), `plugins/gh-railyard` |
 | `gh-shapeup` | Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits. | [`vulpes-facility/gh-shapeup`](https://github.com/vulpes-facility/gh-shapeup), `plugins/gh-shapeup` |
+| `vwiki` | Wiki mechanics for OKF knowledge bundles: the `vwiki` CLI, its ruleset, and five agent skills (init, seed, flush, validate, migrate). | The build of a private repository, in [`plugins/vwiki`](plugins/vwiki) |
 
 ## Adding a plugin
 
@@ -26,10 +27,24 @@ claude plugin install <plugin>@vulpes-facility
   Only the build is published, never the source.
 - A build hides code only from a casual reader: skills, agents and commands are prompts Claude reads, so they ship as they are,
   and bundled or compiled code can still be read back. Logic that must stay private runs on a server, behind a remote MCP server.
-- The marketplace is named `vulpes-facility`, since names that look like Anthropic's own marketplaces, such as `claude-plugins-official`, are refused.
+- The marketplace is named `vulpes`, the name of the catalog it replaces, `vulpes33/claude-plugins`, so that install ids such as `vwiki@vulpes` keep working.
+  Names that look like Anthropic's own marketplaces, such as `claude-plugins-official`, are refused.
 
 Run `claude plugin validate .` before a pull request.
 
+## Releasing vwiki
+
+vwiki's source is private, so each release puts its build here:
+
+1. In the source repository, from a green tree, run `node scripts/release.mjs <clone of this repository>`.
+   It replaces `plugins/vwiki` with the build and refreshes the `vwiki` entry, and leaves committing to you.
+2. Here, on a `feat/vwiki-<version>` branch, review the diff, run `claude plugin validate .`,
+   and commit it as `feat: vwiki <version> - <what changed>`.
+3. Open a pull request, merge it with a merge commit, and tag the merge commit `vwiki-v<version>`.
+
+Users receive a release when `version` in `plugins/vwiki/.claude-plugin/plugin.json` changes.
+
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE), except [`plugins/vwiki`](plugins/vwiki), which is Apache-2.0 and carries its own `LICENSE` and `NOTICE`.
+See [NOTICE](NOTICE).
