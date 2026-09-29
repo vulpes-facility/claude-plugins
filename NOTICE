@@ -1,0 +1,9 @@
+claude-plugins
+Copyright 2026 Chan-yeong Kang
+
+Licensed under the MIT License. See LICENSE.
+
+plugins/vwiki is licensed under the Apache License, Version 2.0, and carries
+its own LICENSE and NOTICE. It includes the Open Knowledge Format (OKF) v0.2
+specification, Copyright Google LLC, licensed under the Apache License,
+Version 2.0 - see plugins/vwiki/NOTICE.

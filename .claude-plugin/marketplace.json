@@ -1,6 +1,6 @@
 {
   "name": "vulpes",
-  "description": "Claude Code plugins for the tools of vulpes-facility, such as gh-railyard and gh-shapeup.",
+  "description": "Claude Code plugins of vulpes-facility, such as gh-railyard, gh-shapeup and vwiki.",
   "owner": {
     "name": "vulpes-facility",
     "url": "https://github.com/vulpes-facility"
@@ -25,6 +25,14 @@
       },
       "description": "Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits, through the gh shapeup CLI.",
       "homepage": "https://github.com/vulpes-facility/gh-shapeup"
+    },
+    {
+      "name": "vwiki",
+      "source": "./plugins/vwiki",
+      "description": "Wiki mechanics for OKF knowledge bundles - the vwiki CLI, its ruleset, and the five agent skills (init, seed, flush, validate, migrate)",
+      "author": {
+        "name": "vulpes33"
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 # claude-plugins
 
-Claude Code plugins for the tools of vulpes-facility.
+Claude Code plugins of vulpes-facility.
 
 ## Install
 
@@ -15,6 +15,7 @@ claude plugin install <plugin>@vulpes
 | --- | --- | --- |
 | `gh-railyard` | Set up and change gh-railyard's Apps, agents and rails by asking Claude, instead of typing the CLI. | [`vulpes-facility/gh-railyard`](https://github.com/vulpes-facility/gh-railyard), `plugins/gh-railyard` |
 | `gh-shapeup` | Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits. | [`vulpes-facility/gh-shapeup`](https://github.com/vulpes-facility/gh-shapeup), `plugins/gh-shapeup` |
+| `vwiki` | Wiki mechanics for OKF knowledge bundles: the `vwiki` CLI, its ruleset, and five agent skills (init, seed, flush, validate, migrate). | The build of a private repository, in [`plugins/vwiki`](plugins/vwiki) |
 
 ## Adding a plugin
 
@@ -33,4 +34,5 @@ Run `claude plugin validate .` before a pull request.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE), except [`plugins/vwiki`](plugins/vwiki), which is Apache-2.0 and carries its own `LICENSE` and `NOTICE`.
+See [NOTICE](NOTICE).
