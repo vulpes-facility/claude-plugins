@@ -1,20 +1,20 @@
 {
   "name": "vulpes",
-  "description": "Claude Code plugins of vulpes-facility, such as gh-shapeup and vwiki.",
+  "description": "Claude Code plugins of vulpes-facility, such as gh-vulpes-shapeup and vwiki.",
   "owner": {
     "name": "vulpes-facility",
     "url": "https://github.com/vulpes-facility"
   },
   "plugins": [
     {
-      "name": "gh-shapeup",
+      "name": "gh-vulpes-shapeup",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/vulpes-facility/gh-shapeup.git",
-        "path": "plugins/gh-shapeup"
+        "url": "https://github.com/vulpes-facility/gh-vulpes-shapeup.git",
+        "path": "plugins/gh-vulpes-shapeup"
       },
-      "description": "Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits, through the gh shapeup CLI.",
-      "homepage": "https://github.com/vulpes-facility/gh-shapeup"
+      "description": "Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits, through the gh vulpes-shapeup CLI.",
+      "homepage": "https://github.com/vulpes-facility/gh-vulpes-shapeup"
     },
     {
       "name": "vwiki",

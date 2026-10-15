@@ -13,7 +13,7 @@ claude plugin install <plugin>@vulpes
 
 | Plugin | What it does | Source |
 | --- | --- | --- |
-| `gh-shapeup` | Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits. | [`vulpes-facility/gh-shapeup`](https://github.com/vulpes-facility/gh-shapeup), `plugins/gh-shapeup` |
+| `gh-vulpes-shapeup` | Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits. | [`vulpes-facility/gh-vulpes-shapeup`](https://github.com/vulpes-facility/gh-vulpes-shapeup), `plugins/gh-vulpes-shapeup` |
 | `vwiki` | Wiki mechanics for OKF knowledge bundles: the `vwiki` CLI, its ruleset, and five agent skills (init, seed, flush, validate, migrate). | The build of a private repository, in [`plugins/vwiki`](plugins/vwiki) |
 
 ## Adding a plugin
