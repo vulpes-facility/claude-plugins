@@ -14,6 +14,7 @@ claude plugin install <plugin>@vulpes
 | Plugin | What it does | Source |
 | --- | --- | --- |
 | `gh-vulpes-shapeup` | Run Shape Up on GitHub Issues and Projects by asking Claude: pitches and bets, scopes on the hill, cooldown work and bugs, completion reports and audits. | [`vulpes-facility/gh-vulpes-shapeup`](https://github.com/vulpes-facility/gh-vulpes-shapeup), `plugins/gh-vulpes-shapeup` |
+| `vulpes-conventions` | Architecture and code conventions for software projects in any stack: server layers, API contracts, data stores, messages, client apps, mobile releases, observability, containers, Kubernetes, cloud providers, and git. | [`vulpes-facility/vulpes-conventions`](https://github.com/vulpes-facility/vulpes-conventions), `plugins/vulpes-conventions` |
 | `vwiki` | Wiki mechanics for OKF knowledge bundles: the `vwiki` CLI, its ruleset, and five agent skills (init, seed, flush, validate, migrate). | The build of a private repository, in [`plugins/vwiki`](plugins/vwiki) |
 
 ## Adding a plugin
